@@ -4,10 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="./styles/main.scss">
+    <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header class="header">
+      <div class="header__top-part">
+        <a href="#home" class="header__link">
+          <img
+            class="header__link-image"
+            src="./images/NAMU.png"
+            alt="Museum logo"
+          >
+        </a>
+
+        <div class="header__right-part">
+          <button class="header__right-part-button">
+            <span class="header__right-part-button-line"></span>
+          </button>
+
+          <select
+            class="header__right-part-select"
+            name="page-language"
+          >
+            <option class="header__right-part-select-option">UA</option>
+            <option class="header__right-part-select-option">RU</option>
+            <option class="header__right-part-select-option">EN</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="header__date">
+        10 серпня - 10 листопада
+      </p>
+
+      <h1 class="header__title">
+        <div class="header__title-start">
+          Мистецтво
+        </div>
+
+        <div class="header__title-end">
+          ХІХ - ХХ ст.
+        </div>
+
+        <p class="header__title-info">
+          Внесок українських митців у світову культуру 19-20ст
+        </p>
+      </h1>
+
+      <button class="header__button">
+        Купити квиток
+      </button>
+
+      <div class="header__bottom-part">
+        <span class="header__bottom-part-date">
+          10.08 - 10.10
+        </span>
+
+        <span class="header__bottom-part-content"></span>
+      </div>
+
+      <div class="header__image">
+        <img
+          class="header__image-girl"
+          src="./images/Girl_from_Podolye_by_V.Tropinin.png"
+          alt="Girl from Podilya image"
+        >
+
+        <p class="header__image-text">
+          Дівчина з Поділля
+          <br>
+          В. Тропінін
+        </p>
+      </div>
+    </header>
   </body>
 </html>
