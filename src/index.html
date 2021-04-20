@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./styles/main.scss">
     <script src="scripts/main.js" defer></script>
   </head>
-  <body>
+  <body class="page">
     <header class="header">
       <div class="header__top-part">
         <a href="#home" class="header__link">
@@ -57,11 +57,13 @@
         </div>
 
         <p class="header__title-info">
-          Внесок українських митців у світову культуру 19-20ст
+          Внесок українських митців у світову культуру
+          <br>
+          19-20ст
         </p>
       </h1>
 
-      <button class="header__button">
+      <button class="header__button page-button">
         Купити квиток
       </button>
 
@@ -87,5 +89,97 @@
         </p>
       </div>
     </header>
+
+    <main class="content">
+      <section class="exhibitions content__exhibitions">
+        <h2 class="exhibitions__title">
+          Актуальні виставки
+        </h2>
+
+        <h2 class="exhibitions__title-date">
+          11.07 - 22.09
+        </h2>
+
+        <div class="exhibitions__angels-image"></div>
+
+        <div class="exhibitions__angels">
+          <h3 class="exhibitions__angels-title">
+            Кураторська виставка “Ангели”
+          </h3>
+
+          <p class="exhibitions__angels-info">
+            Виставковий проект «Ангели» – знакова подія
+            для української культури і водночас
+            наймасштабніший...
+          </p>
+
+          <button class="exhibitions__angels-button page-button">
+            Купити квиток
+          </button>
+        </div>
+
+        <div class="exhibitions__art-text-image"></div>
+        <div class="exhibitions__art-image"></div>
+
+        <div class="exhibitions__art">
+          <p class="exhibitions__art-status">
+            Діє постійно
+          </p>
+
+          <h3 class="exhibitions__art-title">
+            Мистецтво ХХ ст. — XXI ст.
+          </h3>
+
+          <p class="exhibitions__art-info">
+            Знакові роботи Алли Горської, Миколи
+            Самокиша, Федора Кричевського та інших
+            митців.
+          </p>
+
+          <button class="exhibitions__art-button page-button">
+            Купити квиток
+          </button>
+        </div>
+
+        <div class="exhibitions__old-art-text-image"></div>
+        <div class="exhibitions__old-art-image"></div>
+
+        <div class="exhibitions__old-art">
+          <p class="exhibitions__old-art-status">
+            Діє постійно
+          </p>
+
+          <h3 class="exhibitions__old-art-title">
+            Стародавнє мистецтво
+          </h3>
+
+          <p class="exhibitions__old-art-info">
+            Визначні приклади стародавнього українського
+            іконопису та живопису
+          </p>
+
+          <button class="exhibitions__old-art-button page-button">
+            Купити квиток
+          </button>
+        </div>
+
+        <div class="exhibitions__footer">
+          <a
+            class="exhibitions__footer-text"
+            href="#123"
+          >
+            Архів виставок
+          </a>
+
+          <span class="exhibitions__footer-line"></span>
+        </div>
+      </section>
+
+      <section class="events content__events">
+        <h2 class="events__title">
+          Найближчі події
+        </h2>
+      </section>
+    </main>
   </body>
 </html>

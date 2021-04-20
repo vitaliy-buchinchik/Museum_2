@@ -1,0 +1,56 @@
+.exhibitions {
+  position: relative;
+
+  &__title {
+    padding-top: 160px;
+    margin-left: 368px;
+
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+
+    color: #1c1b29;
+
+    &-date {
+      margin-top: 100px;
+      margin-left: 556px;
+
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 120%;
+      color: #cd4d31;
+    }
+  }
+
+  &__footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 213px;
+    margin-top: 1480px;
+    margin-left: 955px;
+    margin-bottom: 260px;
+
+    &-text {
+      width: 123px;
+
+      text-decoration: none;
+      font-family: Raleway, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      color: #1c1b29;
+    }
+
+    &-line {
+      content: "";
+      width: 70px;
+      height: 1px;
+      background-color: #1c1b29;
+    }
+  }
+}
