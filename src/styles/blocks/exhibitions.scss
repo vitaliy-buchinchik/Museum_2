@@ -1,0 +1,257 @@
+.exhibitions {
+  position: relative;
+  margin-bottom: 1860px;
+  &__title {
+    margin-left: calc(0.29 * 100vw);
+
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+
+    color: #1c1b29;
+
+    &-date {
+      margin-top: 100px;
+      margin-left: calc(0.43 * 100vw);
+      margin-bottom: 20px;
+
+      font-family: "Playfair Display", serif;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 58px;
+
+      color: #cd4d31;
+    }
+  }
+
+  &__angels {
+    position: absolute;
+    top: 396px;
+    right: 106px;
+
+    &-image {
+      position: absolute;
+      top: 45px;
+      left: -3px;
+
+      width: 100%;
+      height: 816px;
+
+      background-image: url(../images/angel.png);
+      background-repeat: no-repeat;
+    }
+
+    &-title {
+      padding-bottom: 20px;
+
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      color: #1c1b29;
+    }
+
+    &-info {
+      padding-bottom: 50px;
+      width: 370px;
+
+      font-family: Raleway, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #504f5e;
+    }
+
+    &-button {
+      background-color: #cd4d31;
+      color: #f1f5f4;
+      font-family: Raleway, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      border: none;
+      width: 270px;
+      height: 60px;
+      cursor: pointer;
+    }
+  }
+
+  &__art {
+    position: absolute;
+    top: 852px;
+    left: 215px;
+
+    &-image {
+      position: absolute;
+      top: 803px;
+      right: 0;
+
+      width: 575px;
+      height: 432px;
+
+      background-image: url(../images/art_img.svg);
+      background-repeat: no-repeat;
+    }
+  
+    &-text-image {
+      position: absolute;
+      top: 718px;
+      right: 57px;
+
+      width: 568px;
+      height: 576px;
+
+      background-image: url(../images/art_text.png);
+      background-repeat: no-repeat;
+    }
+  
+    &-status {
+      font-family: Raleway, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+  
+      color: #cd4d31;
+      margin-bottom: 10px;
+    }
+  
+    &-title {
+      margin-bottom: 20px;
+  
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      color: #1c1b29;
+    }
+  
+    &-info {
+      width: 370px;
+      padding-bottom: 50px;
+  
+      font-family: Raleway, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #504f5e;
+    }
+  
+    &-button {
+      background-color: #cd4d31;
+      color: #f1f5f4;
+      font-family: Raleway, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      border: none;
+      width: 270px;
+      height: 60px;
+      cursor: pointer;
+    }
+  }
+
+  &__old-art {
+    position: absolute;
+    top: 1424px;
+    right: 155px;
+  
+    &-image {
+      position: absolute;
+      top: 1305px;
+      left: 31px;
+  
+      width: 584px;
+      height: 499px;
+  
+      background-image: url(../images/old_art.png);
+      background-repeat: no-repeat;
+    }
+  
+    &-text-image {
+      position: absolute;
+      top: 1294px;
+      left: 41px;
+  
+      width: 540px;
+      height: 576px;
+  
+      background-image: url(../images/old_art_text.png);
+      background-repeat: no-repeat;
+    }
+  
+    &-status {
+      font-family: Raleway, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+  
+      color: #cd4d31;
+      margin-bottom: 10px;
+    }
+  
+    &-title {
+      margin-bottom: 20px;
+
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      color: #1c1b29;
+    }
+  
+    &-info {
+      width: 370px;
+      padding-bottom: 50px;
+  
+      font-family: Raleway, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #504f5e;
+    }
+  
+    &-button {
+      background-color: #cd4d31;
+      color: #f1f5f4;
+      font-family: Raleway, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      border: none;
+      width: 270px;
+      height: 60px;
+      cursor: pointer;
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    top: 1830px;
+    right: 122px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 213px;
+
+    &-text {
+      width: 123px;
+
+      text-decoration: none;
+      font-family: Raleway, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      color: #1c1b29;
+    }
+
+    &-line {
+      content: "";
+      width: 70px;
+      height: 1px;
+      background-color: #1c1b29;
+    }
+  }
+}

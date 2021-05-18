@@ -1,0 +1,78 @@
+.subscribe {
+  height: 459px;
+  background-color: #cd4d31;
+  padding-left: 55px;
+
+  &__title {
+    padding-top: 160px;
+    padding-bottom: 41px;
+
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+
+    color: #f1f5f4;
+  }
+
+  &__content {
+    display: grid;
+    align-items: end;
+    grid-template-columns: 570px 380px;
+    gap: 130px;
+  }
+
+  &__text {
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #f1f5f4;
+  }
+
+  &__form {
+    display: flex;
+    gap: 30px;
+
+    ::-webkit-input-placeholder {
+      color: #f1f5f4;
+    }
+  }
+
+  &__field {
+    width: 300px;
+
+    background-color: transparent;
+
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: #f1f5f4;
+
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #f1f5f4;
+  }
+
+  &__button {
+    width: 42px;
+    height: 42px;
+
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #f1f5f4;
+    border-radius: 50%;
+    background-image: url("../images/subcribe_btn.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    visibility: hidden;
+  }
+
+  &__field:focus + &__button {
+    visibility: visible;
+    opacity: 1;
+  }
+}

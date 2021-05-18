@@ -1,0 +1,115 @@
+.footer {
+  position: relative;
+  height: 548px;
+  background-color: #3f5252;
+
+  &__button {
+    position: absolute;
+    top: 160px;
+    right: 40px;
+    width: 42px;
+    height: 42px;
+    background-image: url(../images/arrow_up.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__content {
+    padding-top: 160px;
+    padding-left: 55px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    &-part {
+      max-width: 241px;
+
+      &-title {
+        margin-bottom: 40px;
+
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+    
+        color: #f1f5f4;
+      }
+    }
+
+    &-nav-item {
+      list-style: none;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__socialnet {
+    margin: 0 -10px;
+
+    &-facebook {
+      content: url(../images/facebook.svg);
+      padding: 10px;
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    &-twitter {
+      content: url(../images/twitter.svg);
+      padding: 10px;
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    &-telegram {
+      content: url(../images/telega.svg);
+      padding: 10px;
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    &-instagram {
+      content: url(../images/inst.svg);
+      padding: 10px;
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__link,
+  &__content-part-info,
+  &__content-nav-link {
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #f1f5f4;
+  }
+
+  &__copyright {
+    display: grid;
+    grid-template-columns: repeat(2, 105px);
+    justify-content: center;
+    gap: 40px;
+
+    margin-top: 77px;
+
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 20px;
+
+    color: #f1f5f4;
+  }
+}
