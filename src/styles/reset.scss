@@ -1,13 +1,25 @@
-select,
-button,
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
 img,
-span,
-p,
-a,
+ul,
+li,
 h1,
 h2,
 h3,
-body {
+h4,
+a,
+p {
   margin: 0;
   padding: 0;
 }

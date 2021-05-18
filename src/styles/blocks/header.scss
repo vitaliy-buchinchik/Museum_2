@@ -8,6 +8,10 @@
 
   overflow: hidden;
 
+  &__link {
+    z-index: 2;
+  }
+
   &__top-part {
     display: flex;
     justify-content: space-between;
@@ -25,44 +29,23 @@
 
     width: 110px;
 
-    &-button {
-      display: flex;
-      align-items: center;
-      position: relative;
-      height: 18px;
-      width: 25px;
+    &-menu {
+      z-index: 1;
 
-      background-color: #3f5252;
-      border: none;
+      height: 22px;
+      width: 25px;
+      background-image: url(../images/menu.svg);
+      background-position: center;
+      background-repeat: no-repeat;
       cursor: pointer;
 
-      &-line {
-        content: "";
-        width: 100%;
-        height: 2px;
-        background-color: #f1f5f4;
+      transition: z-index 1s;
 
-        &::before {
-          position: absolute;
-          top: 0;
-          left: 0;
+      &--active {
+        z-index: 1;
 
-          content: "";
-          width: 100%;
-          height: 2px;
-          background-color: #f1f5f4;
-        }
-
-        &::after {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-
-          content: "";
-          width: 100%;
-          height: 2px;
-          background-color: #f1f5f4;
-        }
+        background-image: url(../images/close_menu.svg);
+        transition: z-index 1s;
       }
     }
 
@@ -158,6 +141,7 @@
 
     &-girl {
       height: 633px;
+      width: 600px;
     }
 
     &-text {
@@ -169,6 +153,24 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 24px;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: #3f5252;
+
+    &--active {
+      transition: opacity 1s;
+      opacity: 1;
     }
   }
 }

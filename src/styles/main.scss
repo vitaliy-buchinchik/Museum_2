@@ -1,9 +1,11 @@
-@import "./reset.scss";
+@import "reset";
 
-@import "./blocks/header";
-@import "./blocks/content";
-@import "./blocks/exhibitions/exhibitions.scss";
-@import "./blocks/exhibitions/angels.scss";
-@import "./blocks/exhibitions/art.scss";
-@import "./blocks/exhibitions/old-art.scss";
-@import "./blocks/events/events.scss";
+@import "./blocks/page.scss";
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/exhibitions.scss";
+@import "./blocks/events.scss";
+@import "./blocks/visit.scss";
+@import "./blocks/news.scss";
+@import "./blocks/subscribe.scss";
+@import "./blocks/footer.scss";
