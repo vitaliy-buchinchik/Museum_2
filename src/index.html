@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1. 0">
-    <title>Museum_2</title>
+    <title>Museum</title>
+    <link rel="icon" href="./images/1200px-Girl_from_Podolye_by_V.Tropinin.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
@@ -58,14 +59,16 @@
 
         <p class="header__title-info">
           Внесок українських митців у світову культуру
-          <br>
           19-20ст
         </p>
       </h1>
 
-      <button class="header__button page-button">
+      <a
+        class="header__button"
+        href="#visit"
+      >
         Купити квиток
-      </button>
+      </a>
 
       <div class="header__bottom-part">
         <span class="header__bottom-part-date">
@@ -114,19 +117,19 @@
 
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link">
+            <a href="#visit" class="nav__link">
               Спланувати візит
             </a>
           </li>
 
           <li class="nav__item">
-            <a href="#" class="nav__link">
+            <a href="#events" class="nav__link">
               Виставки та події
             </a>
           </li>
 
           <li class="nav__item">
-            <a href="#" class="nav__link">
+            <a href="#collection" class="nav__link">
               Колекція
             </a>
           </li>
@@ -135,13 +138,19 @@
         <div class="nav__content"></div>
 
         <div class="nav__buttons">
-          <button class="nav__buttons-ticket">
+          <a
+            class="nav__buttons-ticket"
+            href="#visit"
+          >
             Купити квиток
-          </button>
+          </a>
 
-          <button class="nav__buttons-member">
+          <a
+            class="nav__buttons-member"
+            href="#subscribe"
+          >
             Стати членом
-          </button>
+          </a>
         </div>
 
         <div class="nav__image">
@@ -154,7 +163,10 @@
     </header>
 
     <main class="content">
-      <section class="exhibitions content__exhibitions">
+      <section
+        class="exhibitions content__exhibitions"
+        id="collection"
+      >
         <h2 class="exhibitions__title">
           Актуальні виставки
         </h2>
@@ -176,9 +188,12 @@
             наймасштабніший...
           </p>
 
-          <button class="exhibitions__angels-button page-button">
+          <a
+            class="exhibitions__angels-button page-button"
+            href="#visit"
+          >
             Купити квиток
-          </button>
+          </a>
         </div>
 
         <div class="exhibitions__art-text-image"></div>
@@ -199,9 +214,12 @@
             митців.
           </p>
 
-          <button class="exhibitions__art-button page-button">
+          <a
+            class="exhibitions__art-button page-button"
+            href="#visit"
+          >
             Купити квиток
-          </button>
+          </a>
         </div>
 
         <div class="exhibitions__old-art-text-image"></div>
@@ -221,9 +239,12 @@
             іконопису та живопису
           </p>
 
-          <button class="exhibitions__old-art-button page-button">
+          <a
+            class="exhibitions__old-art-button page-button"
+            href="#visit"
+          >
             Купити квиток
-          </button>
+          </a>
         </div>
 
         <div class="exhibitions__footer">
@@ -238,24 +259,23 @@
         </div>
       </section>
 
-      <section class="events content__events">
+      <section
+        class="events content__events"
+        id="events"
+      >
         <h2 class="events__title">
           Найближчі події
         </h2>
 
         <div class="events__excursion">
           <div class="events__excursion-period">
-            <img
-            class="events__excursion-period-date"
-              src="./images/14.08.png"
-              alt="14.08"
-            >
+            <p class="events__excursion-period-date">
+              14.08
+            </p>
 
-            <img
-              class="events__excursion-period-time"
-              src="./images/13_00.png"
-              alt="13:00"
-            >
+            <p class="events__excursion-period-time">
+              13:00
+            </p>
           </div>
 
           <div class="events__excursion-info">
@@ -272,9 +292,12 @@
               і в момент вашої присутності – розгортатиметься...
             </p>
 
-            <button class="events__excursion-info-button">
+            <a
+              class="events__excursion-info-button"
+              href="#subscribe"
+            >
               Зареєструватись
-            </button>
+            </a>
           </div>
 
           <div class="events__excursion-img">
@@ -294,17 +317,13 @@
           </div>
 
           <div class="events__trip-period">
-            <img
-            class="events__trip-period-date"
-              src="./images/18.08.png"
-              alt="18.08"
-            >
+            <p class="events__trip-period-date">
+              18.08
+            </p>
 
-            <img
-              class="events__trip-period-time"
-              src="./images/14_00.png"
-              alt="14:00"
-            >
+            <p class="events__trip-period-time">
+              14:00
+            </p>
           </div>
 
           <div class="events__trip-info">
@@ -321,9 +340,12 @@
               кругосвітньої подорожі - Австралія.
             </p>
 
-            <button class="events__trip-info-button">
+            <a
+              class="events__trip-info-button"
+              href="#subscribe"
+            >
               Зареєструватись
-            </button>
+            </a>
           </div>
         </div>
 
@@ -339,7 +361,10 @@
         </div>
       </section>
 
-      <section class="visit content__visit">
+      <section
+        class="visit content__visit"
+        id="visit"
+      >
         <img
           class="visit__img"
           src="./images/visit_girl.png"
@@ -356,9 +381,12 @@
           насолоджуватись мистецтвом
         </p>
 
-        <button class="visit__button">
+        <a
+          href="#footer"
+          class="visit__button"
+        >
           Почати
-        </button>
+        </a>
       </section>
 
       <section class="news content__news">
@@ -443,7 +471,10 @@
         </div>
       </section>
 
-      <section class="subscribe content__subscribe">
+      <section
+        class="subscribe content__subscribe"
+        id="subscribe"
+      >
         <h2 class="subscribe__title">
           Підпишіться на дайджест
         </h2>
@@ -454,13 +485,12 @@
             запрошення на події та читайте статті від кураторів
           </p>
 
-          <form class="subscribe__form" action="">
+          <form class="subscribe__form">
             <input
               class="subscribe__field"
               type="email"
               name="email"
               placeholder="e-mail"
-              required
             >
 
             <button
@@ -473,7 +503,7 @@
       </section>
     </main>
 
-    <footer class="page__footer footer">
+    <footer class="page__footer footer" id="footer">
       <a class="footer__button" href="#home"></a>
 
       <div class="footer__content">
@@ -482,7 +512,10 @@
             Контакти
           </h4>
 
-          <a href="#77777" class="footer__link">
+          <a
+            href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB%D0%B0+%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE,+6,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4494397,30.5285706,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4ce524453048d:0x49a2895b6cb43e10!8m2!3d50.4494397!4d30.5307593"
+            class="footer__link"
+          >
             Київ,<br>
             вул. М. Грушевського, 6
           </a>

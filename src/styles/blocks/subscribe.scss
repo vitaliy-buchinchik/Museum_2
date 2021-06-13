@@ -3,7 +3,36 @@
   background-color: #cd4d31;
   padding-left: 55px;
 
+  @media (max-width: 768px) {
+    padding-right: 55px;
+  }
+
+  @media (max-width: 540px) {
+    padding: 0;
+  }
+
   &__title {
+    @media (max-width: 1024px) {
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 100px;
+      padding-bottom: 80px;
+    }
+
+    @media (max-width: 540px) {
+      margin-left: calc((100vw - 280px) / 2);
+      padding-top: 80px;
+      padding-bottom: 40px;
+
+      width: 280px;
+
+      font-size: 36px;
+      line-height: 36px;
+    }
+
     padding-top: 160px;
     padding-bottom: 41px;
 
@@ -16,6 +45,23 @@
   }
 
   &__content {
+    @media (max-width: 1024px) {
+      display: flex;
+      margin-right: 40px;
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+
+    @media (max-width: 540px) {
+      display: flex;
+      flex-direction: column;
+      margin-left: calc((100vw - 280px) / 2);
+      width: 280px;
+      gap: 0;
+    }
+
     display: grid;
     align-items: end;
     grid-template-columns: 570px 380px;
@@ -23,6 +69,10 @@
   }
 
   &__text {
+    @media (max-width: 540px) {
+      padding-bottom: 60px;
+    }
+
     font-family: Raleway, sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -35,15 +85,20 @@
     display: flex;
     gap: 30px;
 
-    ::-webkit-input-placeholder {
+    ::placeholder {
       color: #f1f5f4;
     }
   }
 
   &__field {
+    @media (max-width: 1024px) {
+      width: 200px;
+      font-size: 16px;
+      line-height: 20px;
+    }
     width: 300px;
 
-    background-color: transparent;
+    background-color: #cd4d31;
 
     font-family: Raleway, sans-serif;
     font-size: 20px;
@@ -53,6 +108,11 @@
     outline: none;
     border: none;
     border-bottom: 1px solid #f1f5f4;
+
+    &::after {
+      background-color: #cd4d31;
+      content: "";
+    }
   }
 
   &__button {

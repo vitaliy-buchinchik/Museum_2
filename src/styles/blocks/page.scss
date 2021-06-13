@@ -1,5 +1,14 @@
 .page {
   &__header {
+    @media (max-width: 768px) {
+      margin-bottom: 115px;
+    }
+
+    @media (max-width: 540px) {
+      margin-bottom: 60px;
+      // overflow-x: hidden;
+    }
+
     margin-bottom: 160px;
   }
 }
