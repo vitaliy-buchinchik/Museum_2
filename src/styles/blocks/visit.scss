@@ -1,0 +1,122 @@
+.visit {
+  position: relative;
+  background-color: #3f5252;
+  height: 800px;
+  &__img {
+    @media(max-width: 1024px) {
+      height: 550px;
+    }
+
+    @media(max-width: 768px) {
+      height: 462px;
+    }
+
+    @media(max-width: 540px) {
+      visibility: hidden;
+    }
+
+    position: absolute;
+    bottom: 0;
+    height: 657px;
+  }
+
+  &__title {
+    @media(max-width: 1024px) {
+      font-size: 80px;
+      line-height: 80px;
+    }
+
+    @media(max-width: 768px) {
+      left: 100px;
+      width: 523px;
+      font-size: 72px;
+      line-height: 72px;
+    }
+
+    @media(max-width: 540px) {
+      top: 80px;
+      left: calc((100vw - 280px) / 2);
+      right: calc((100vw - 280px) / 2);
+      width: 280px;
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    position: absolute;
+    top: 120px;
+    right: 25px;
+
+    width: 700px;
+
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 96px;
+    color: #f1f5f4;
+  }
+
+  &__text {
+    @media(max-width: 768px) {
+      width: 380px;
+      right: 70px;
+    }
+
+    @media(max-width: 540px) {
+      top: 330px;
+      left: calc((100vw - 280px) / 2);
+      right: calc((100vw - 280px) / 2);
+      width: 280px;
+    }
+
+    position: absolute;
+    top: 400px;
+    right: 155px;
+    margin-bottom: 70px;
+
+    width: 470px;
+
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #f1f5f4;
+  }
+
+  &__button {
+    @media(max-width: 768px) {
+      right: 192px;
+
+      width: 258px;
+    }
+
+    @media(max-width: 540px) {
+      left: calc((100vw - 280px) / 2);
+      right: calc((100vw - 280px) / 2);
+      width: 280px;
+    }
+
+    position: absolute;
+    top: 560px;
+    right: 353px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #cd4d31;
+    color: #f1f5f4;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 270px;
+    height: 60px;
+
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 5px 5px 5px 1px rgba(161, 59, 59, 0.5);
+    }
+  }
+}
